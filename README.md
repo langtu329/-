@@ -1,13 +1,15 @@
 # -
 nginx 配置加入：
+```
 log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
                       '$status $body_bytes_sent $request_time "$http_referer" '
                       '"$http_user_agent" "$http_x_forwarded_for"';
+```
 修改http配置：access_log  /home/wwwlogs/web.log main;
 
 
 log操作配置
-
+```
 Options:
   -h, --help            show this help message and exit
   -f FILE_PATH, --file-path=FILE_PATH
@@ -30,10 +32,11 @@ Options:
                         than 2s
   -l TIME_LOCAL, --time-local=TIME_LOCAL
                                  Description: default current time eg:31/Oct
+```  
   
-  
-  案例：
-  [root@localhost dist]# ./log  -f access_accountbackend.log  -t ip -l 01/Nov -n 10 #显示11.1日访问前10的ip
+ ##案例：
+ ```
+   [root@localhost dist]# ./log  -f access_accountbackend.log  -t ip -l 01/Nov -n 10 #显示11.1日访问前10的ip
      28 100.116.190.120
      27 100.116.190.107
      25 100.116.190.76
@@ -56,3 +59,4 @@ Options:
      84 221.93.181.110
      62 111.165.175.113
      49 223.223.194.71
+```
