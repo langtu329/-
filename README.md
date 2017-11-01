@@ -34,7 +34,7 @@ Options:
                                  Description: default current time eg:31/Oct
 ```  
   
- ##案例：
+    案例：
  ```
    [root@localhost dist]# ./log  -f access_accountbackend.log  -t ip -l 01/Nov -n 10 #显示11.1日访问前10的ip
      28 100.116.190.120
