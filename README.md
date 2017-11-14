@@ -1,4 +1,15 @@
-# -
+# 日志分析
+打包后对linux glibc版本有要求
+centos6 环境glibc 版本一般是2.12
+centos7 环境glibc 版本一般是2.17
+ubuntu没有试过
+
+
+查看glibc版本命令
+rpm -qa | grep glibc
+rpm -qi glibc
+
+
 nginx 配置加入：
 ```
 log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
