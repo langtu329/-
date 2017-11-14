@@ -1,14 +1,15 @@
 # 日志分析
+```
 打包后对linux glibc版本有要求
 centos6 环境glibc 版本一般是2.12
 centos7 环境glibc 版本一般是2.17
 ubuntu没有试过
 
-
 查看glibc版本命令
 rpm -qa | grep glibc
 rpm -qi glibc
-
+连接地址：http://blog.sina.com.cn/s/blog_75acbe0b0101596n.html
+```
 
 nginx 配置加入：
 ```
